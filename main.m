@@ -5,10 +5,10 @@ syms x1 x2
 f(x1,x2) = 100*(x2-x1^2)^2 + (1-x1)^2;
 
 
-%% solution by SGM
+%% solution by Steepest Gradient Method
 % [fx, AllX, x_opt] = steepestDescent(f, [-1.2, 1]);
 
-%% solution by CGM
+%% solution by Conjugate Gradient Method
 [fx, AllX, x_opt] = conjugateGradient(f, [-1.2 1]);
 
 fprintf('x* = [%.16f %.16f]\n', x_opt)
